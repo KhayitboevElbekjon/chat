@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <html lang="uz-UZ">
+    <head>
+        <style>
+    .gerb{
+        display: block;
+        border: none;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+</style>
+        {% load static %}
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='robots' content='noindex,follow' />
+        <meta name="csrf-param" content="_csrf-backend">
+<meta name="csrf-token" content="rBCaJBJiUPQmG4gqMbvqrfCJE4vy6zdq7If4JmLOts_Ye_9LJjExk0xdw01m8KXYhL9C1Mq_ZD-Wxr1DNrbunw==">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="shortcut icon" href="{% static './icon.png' %}" type="x-icon">
+        <title>Login | HEMIS OTM axborot tizimi</title>
+
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=xamid_choriyev"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+                gtag('config', 'xamid_choriyev');
+            </script>
+        
+        <link href="https://hemis.tersu.uz/static/assets/5dd0fc5/themes/smoothness/jquery-ui.css?v=1474004875" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/1619872/css/bootstrap.css?v=1550073338" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/435a53b2/chosen_v1.4.0/chosen.min.css?v=1598517690" rel="stylesheet">
+<link href="https://hemi    s.tersu.uz/static/assets/435a53b2/components-font-awesome/css/font-awesome.min.css?v=1401044116" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/d3c561cf/css/font-awesome.min.css?v=1477324374" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/cdbca88/plugins/iCheck/flat/blue.css?v=1567066820" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/cdbca88/dist/css/AdminLTE.min.css?v=1567066820" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/cdbca88/dist/css/skins/skin-blue.min.css?v=1567066820" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/a8b87dc0/src/0.1.4/css/checkBo.min.css?v=1465721329" rel="stylesheet">
+<link href="https://hemis.tersu.uz/static/assets/dd347e36/css/style.css?v=1670929242" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet">
+<script>var globalMessages={"deleteItem":"Haqiqatan o‘chirmoqchimisiz?"};</script>    </head>
+    </head>
+    <body class="hold-transition login-page ">
+        <div class="login-box">
+    <div class="box box-success">
+        <div class="box-header">
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default dropdown-toggle btn-transparent"
+                        data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                                            <li>
+                            <a href="/dashboard/login">
+                                O‘zbekcha                            </a>
+                        </li>
+                                            <li>
+                            <a href="/oz/dashboard/login">
+                                Ўзбекча                            </a>
+                        </li>
+                                            <li>
+                            <a href="/ru/dashboard/login">
+                                Русский                            </a>
+                        </li>
+                                            <li>
+                            <a href="/en/dashboard/login">
+                                English                            </a>
+                        </li>
+                                            <li>
+                            <a href="/kk/dashboard/login">
+                                Қарақалпақша                            </a>
+                        </li>
+                                            <li>
+                            <a href="register/">
+                                Тоҷикӣ                            </a>
+                        </li>
+                        <li>
+                            <a href="/kz/dashboard/login">
+                                Қазақча                            </a>
+                        </li>
+                                            <li>
+                            <a href="/tm/dashboard/login">
+                                Türkmence                            </a>
+                        </li>
+                                            <li>
+                            <a href="/kg/dashboard/login">
+                                Кыргызча                            </a>
+                        </li>
+                                        <li class="divider"></li>
+                    <li><a href="/dashboard/reset">Parolni bekor qilish</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+        <form id="login-form"  method="post"> {% csrf_token %}
+
+                <input type="hidden" name="_csrf-backend" value="rBCaJBJiUPQmG4gqMbvqrfCJE4vy6zdq7If4JmLOts_Ye_9LJjExk0xdw01m8KXYhL9C1Mq_ZD-Wxr1DNrbunw==">
+            <div class="box-body">
+
+                           <center><button type="submit" class="gerb"> <img class='logo' src="{% static './gerb.png' %}"></button></center>
+
+                                            <h4 class="login-box-msg">Toshkent axborot texnologiyalari universiteti Farg‘ona filiali</h4>
+                                        <h5 class="login-box-msg">HEMIS Student axborot tizimi</h5>
+
+
+                            <div class="form-group has-feedback field-formadminlogin-login required">
+                <input type="text" id="formadminlogin-login" class="form-control" name="login" placeholder="Talaba ID" aria-required="true"><span class="glyphicon  form-control-feedback"><i class="fa-solid fa-envelope"></i></span>
+                </div>            <div class="form-group has-feedback field-formadminlogin-password required">
+                <input type="password" id="formadminlogin-password" class="form-control" name="parol" placeholder="Parol" aria-required="true"><span class="glyphicon  form-control-feedback"><i class="fa-solid fa-lock"></i></span>
+                </div>
+                            <div class="form-group">
+                                <div class="form-group field-formadminlogin-recaptcha">
+
+                <input type="hidden" id="formadminlogin-recaptcha" class="form-control" name="FormAdminLogin[reCaptcha]">
+                <p class="help-block help-block-error"></p>
+                </div>            </div>
+
+                        </div>
+
+        </form>
+
+
+
+
+
+        <div class="box-footer">
+            <div class="row">
+                <div class="col col-xs-4 checkbo">
+                                            <label class="control-label cb-checkbox " for="rememberMe" style="margin-top: 6px">
+                            Eslab qolish<input type="checkbox" id="rememberMe" name="FormAdminLogin[rememberMe]" value="1">                        </label>
+                                    </div>
+                <div class="col col-xs-8">
+
+                <a href="https://student.fbtuit.uz/dashboard/login"><button  type="submit" class="btn btn-primary btn-block btn-flat">Kirish</button> </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+<!--    <script src="//www.google.com/recaptcha/api.js?render=6LeiPbEaAAAAANg4uuguqWRxO_Dt16BCwaI-ygy-"></script>-->
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/jquery.js?v=1606135937"></script>
+<script src="https://hemis.tersu.uz/static/assets/a039600/yii.js?v=1614872704"></script>
+<script src="https://hemis.tersu.uz/static/assets/a039600/yii.validation.js?v=1614872704"></script>
+<script src="https://hemis.tersu.uz/static/assets/a039600/yii.activeForm.js?v=1614872704"></script>
+<script src="https://hemis.tersu.uz/static/assets/5dd0fc5/jquery-ui.js?v=1474004875"></script>
+<script src="https://hemis.tersu.uz/static/assets/1619872/js/bootstrap.js?v=1550073338"></script>
+<script src="https://hemis.tersu.uz/static/assets/435a53b2/theia-sticky-sidebar/dist/theia-sticky-sidebar.min.js?v=1493119854"></script>
+<script src="https://hemis.tersu.uz/static/assets/cdbca88/plugins/iCheck/icheck.min.js?v=1567066820"></script>
+<script src="https://hemis.tersu.uz/static/assets/cdbca88/dist/js/adminlte.min.js?v=1567066820"></script>
+<script src="https://hemis.tersu.uz/static/assets/a8b87dc0/src/0.1.4/js/checkBo.min.js?v=1465721329"></script>
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/ajax-modal-popup.js?v=1619656590"></script>
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/jquery.floatThead.min.js?v=1670929242"></script>
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/jquery.formatter.min.js?v=1598464812"></script>
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/scripts.js?v=1670929242"></script>
+<script src="https://hemis.tersu.uz/static/assets/dd347e36/js/js.cookie.js?v=1598464812"></script>
+<!--<script>jQuery(function ($) {-->
+<!--"use strict";-->
+<!--grecaptcha.ready(function() {-->
+<!--    grecaptcha.execute("6LeiPbEaAAAAANg4uuguqWRxO_Dt16BCwaI-ygy-", {action: "adminLogin"}).then(function(token) {-->
+<!--        jQuery("#" + "formadminlogin-recaptcha").val(token);-->
+
+<!--        const jsCallback = "";-->
+<!--        if (jsCallback) {-->
+<!--            eval("(" + jsCallback + ")(token)");-->
+<!--        }-->
+<!--    });-->
+<!--});-->
+<!--jQuery('#login-form').yiiActiveForm([{"id":"formadminlogin-login","name":"login","container":".field-formadminlogin-login","input":"#formadminlogin-login","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Login bo'sh bo'lishi mumkin emas"});}},{"id":"formadminlogin-password","name":"password","container":".field-formadminlogin-password","input":"#formadminlogin-password","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Parol bo'sh bo'lishi mumkin emas"});}}], []);-->
+<!--});</script>   -->
+    </body>
+    </html>
