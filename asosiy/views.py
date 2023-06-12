@@ -52,3 +52,6 @@ def register(request):
 def Logaut(request):
     logout(request)
     return redirect('/')
+
+def test(request):
+    return render(request,'hemis_test.html')
